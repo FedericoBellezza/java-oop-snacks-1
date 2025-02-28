@@ -9,13 +9,17 @@ public class Main {
         System.out.println("------------------------------------");
 
         // Create a new student register
-        StudentsRegister RegistroAlunni = new StudentsRegister(3);
+        StudentsRegister register = new StudentsRegister();
 
-        // Add a new student
-        RegistroAlunni.addStudent(new Student("Federico", "Bellezza", 23));
+        // add students to the register
+        register.addStudent(new Student("Federico", "Bellezza", 23));
+        register.addStudent(new Student("Luca", "Bianchi", 22));
+        register.addStudent(new Student("Giuseppe", "Verdi", 20));
 
+        // Print the register
+        System.out.println(register.toString());
 
-        System.out.println(RegistroAlunni[0].name);
+        
         System.out.println("------------------------------------");
 
     }
